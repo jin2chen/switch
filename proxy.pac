@@ -21,7 +21,9 @@ var FindProxyForURL = (function (init, profiles) {
       /^10\./.test(host) ||
       /\.snc-dev\.com$/.test(host) ||
       /\.snc-tools\.com$/.test(host) ||
-      /\.localhost\.localstack\.cloud$/.test(host)
+      /\.localhost\.localstack\.cloud$/.test(host) ||
+      /\.cibtunnel\.xyz$/.test(host) ||
+      /\.snctest\.com$/.test(host)
     )
       return "DIRECT";
     return "SOCKS5 127.0.0.1:1080; SOCKS 127.0.0.1:1080";
